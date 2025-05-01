@@ -36,12 +36,12 @@ const findMetaMaskAccount = async () => {
         const accounts = await ethereum.request({ method: "eth_accounts" });
 
         if (accounts.length !== 0) {
-            const account = accounts[0];nd");
+            const account = accounts[0];
             return null;
             console.log("Found an authorized account:", account);
             return account;
         } else {
-            console.error("No authorized account fou
+            console.error("No authorized account found");
         }
     } catch (error) {
         console.error(error);
